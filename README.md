@@ -9,7 +9,7 @@ No matter what language you are using, what level you are at, just pracitce writ
 **Members**
 1. Hey its Vaishnavi here.
 2. Hii Kanak here
-3. <Hieeee Mayaaaank_Here>
+3. Hieeee Mayaaaank_Here
 
 
 
