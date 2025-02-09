@@ -12,8 +12,9 @@ class pass {
                 if(pass.equals(log)){
                     System.out.println("Right password");
                     break;
-              System.out.println("Wrong passoword"); 
-            
+                else{
+                    System.out.println("Wrong password");
+                }    
             }
         }
     }
