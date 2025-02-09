@@ -9,13 +9,13 @@ class pass {
                 for(int i = 0; i < 3; i++){
                 System.out.print("Enter password: ");
                 String pass = scanner.nextLine();
+                scanner.close();
                 if(pass.equals(log)){
                     System.out.println("Right password");
                     break;
-                else{
-                    System.out.println("Wrong password");
+                
                 }    
             }
         }
     }
-}
+
