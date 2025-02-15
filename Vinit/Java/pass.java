@@ -1,3 +1,4 @@
+// A simple program to check for password input
 import java.util.Scanner;
 
 class pass {
