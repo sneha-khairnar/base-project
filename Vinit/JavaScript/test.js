@@ -7,4 +7,3 @@ console.log('Making changes');
 var b = 'sports'
 console.log(b + " "+a);
 
-
