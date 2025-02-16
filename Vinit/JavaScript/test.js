@@ -4,12 +4,17 @@ console.log("Testing 2.0");
 var a = "car"
 console.log(a);
 console.log('Making changes');
-var b = 'sports'
-// console.log(b + " "+a);
+var b = 'sports' 
+console.log(b + " "+a);
 
 // Array
 let arr = [1,23,34,45,56];
 console.log(arr[1]);
+
+// Loop forEach => Arrays
+arr.forEach(function(val){
+    console.log(val+2)
+})
 
 // Object
 let obj = {
@@ -19,7 +24,14 @@ let obj = {
     model: '911 RSR',
     year: 2018,
 }
-console.log(obj.year);
+console.log(obj.model);
+
+// Loop forIn => Objects
+
+for( let key in obj){
+    // console.log(key); prints  property
+    console.log(obj[key]);  //prints object obj
+}
 
 // Loop (for)
 for(i = 8; i < 11; i++){
@@ -30,7 +42,7 @@ for(i = 8; i < 11; i++){
 var a = 8;
 while(a > 0 && a < 10){
     a++;
-    console.log('I is greater than 0' + a);
+    console.log('a is greater than ' + a);
 }
 
 // Functions
@@ -39,5 +51,7 @@ function fig(YourName){
     console.log(YourName);
 }
 fig(YourName);
+
+// firstClassFunctions => In JS functions can be  used as values in a function or a variable
 
  
