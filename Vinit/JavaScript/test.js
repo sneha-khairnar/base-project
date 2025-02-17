@@ -1,3 +1,4 @@
+const { rollupVersion } = require("vite");
 
 console.log("Testing Git cli to push code");
 console.log("Testing 2.0");
@@ -18,7 +19,6 @@ arr.forEach(function(val){
 
 // Object
 let obj = {
-    
     type: 'sports car',
     name: 'porshce',
     model: '911 RSR',
@@ -54,4 +54,3 @@ fig(YourName);
 
 // firstClassFunctions => In JS functions can be  used as values in a function or a variable
 
- 
