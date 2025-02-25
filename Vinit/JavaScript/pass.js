@@ -8,6 +8,7 @@ if(pass == log){
 }
 else{
     console.log('Wrong password');
+    prompt('Enter OTP for another attemp');
 }
 }
 
