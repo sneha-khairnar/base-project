@@ -1,4 +1,4 @@
-const { rollupVersion } = require("vite");
+
 
 console.log("Testing Git cli to push code");
 console.log("Testing 2.0");
@@ -54,3 +54,21 @@ fig(YourName);
 
 // firstClassFunctions => In JS functions can be  used as values in a function or a variable
 
+//object study
+
+let fighter = {
+    gen: "5th gen",
+    type: "fighter",
+    projectCode: 22, 
+    manufacturer: "Lockheed Martin"
+}
+
+console.log(fighter)
+
+function f22() {
+    if(fighter.gen == "5th gen"){
+        console.log("its a F22 raptor, 5th gen fighter jet")
+    }
+}
+
+f22();
