@@ -33,3 +33,4 @@ while(playAgain.trim().toLowerCase() == "yes"){
 alert("your score is", count);
 
 
+//testing changes
