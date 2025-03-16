@@ -1,9 +1,12 @@
 let quiz = {
     a1: { q:"Which is BMW's sport sedan?", answer: "M5 competetion"},
-    a2: { q:"Where is BMW HQ?",answer: "Munich"},
-    a3: { q:"Whats BMW's motorbike division called?",answer: "Motorrad"},
-    a4: { q:"Whats the power output of BMW M5 CS?",answer: "635 HP"},
-    a5: { q:"Whats the displacement of BMW's current V8 engine?",answer: "4.4L"}
+    a2: { q:"Where is BMW HQ?", answer: "Munich"},
+    a3: { q:"Whats BMW's motorbike division called?", answer: "Motorrad"},
+    a4: { q:"Whats the power output of BMW M5 CS?", answer: "635 HP"},
+    a5: { q:"Whats the displacement of BMW's current V8 engine?", answer: "4.4L"},
+    a6: { q:"For which generation M5 CS was launched?", answer: "f90"},
+    a7: { q:"Whats the drive train for M5 competition?", answer: "AWD"},
+    a8: { q:"What type of transmission is used in M5 competition?", answer: "Torque Converter"}
 }
 
 console.log(quiz.a2)
@@ -27,6 +30,7 @@ while(playAgain.trim().toLowerCase() == "yes"){
     }
     playAgain = prompt("Do you want to play again?")
 }
-alert(count);
+alert("your score is", count);
 
 
+//testing changes
