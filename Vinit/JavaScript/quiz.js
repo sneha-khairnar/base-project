@@ -9,24 +9,24 @@ let quiz = {
 console.log(quiz.a2)
 const keys = Object.keys(quiz);
 console.log(keys);
-const random = keys[Math.floor(Math.random() * keys.length)];
-console.log(random);
-let selectedQues = quiz[random];
 
-console.log(quiz[random]);
-
-const usrAns = prompt(selectedQues.q);
+let playAgain = "yes";
 let count = 0;
-let i;
-for(i = 0; i < 3; i ++){
-if(usrAns.toLowerCase == selectedQues.answer.toLowerCase){
-    console.log("Right answer");
-    count++;
-}
-else{
-    console.log("Wrong answer");
-}
-}
-console.log(count);
 
-//this is testing
+while(playAgain.trim().toLowerCase() == "yes"){
+
+    const random = keys[Math.floor(Math.random() * keys.length)];
+    let selectedQues = quiz[random];
+    const usrAns = prompt(selectedQues.q);
+    if(usrAns.toLowerCase == selectedQues.answer.toLowerCase){
+        alert("Right answer");
+        count++;
+    }
+    else{
+        alert("Wrong answer");
+    }
+    playAgain = prompt("Do you want to play again?")
+}
+alert(count);
+
+
