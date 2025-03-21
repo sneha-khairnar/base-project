@@ -8,7 +8,6 @@ const decrementBtn = document.getElementById ("decrement");
 let count = 0;
 incrementBtn.addEventListener("click", function(){
     count++;
-    alert("Button clicked")
     counterDisplay.textContent = count;
 });
 
