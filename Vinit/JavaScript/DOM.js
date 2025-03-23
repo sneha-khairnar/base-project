@@ -6,7 +6,8 @@ const incrementBtn = document.getElementById ("increment");
 const decrementBtn = document.getElementById ("decrement");
 const resetBtn = document.getElementById("reset");
 
-let count = 0;
+let count = localStorage.getItem("counter") ? parseInt(localStorage.getItem("counter")): 0;
+counterDisplay.textContent = count;
 
 function updateCounterColor(){
  if(count > 0){
@@ -18,16 +19,23 @@ function updateCounterColor(){
     counterDisplay.style.color = "black";
  }
 }
+
+function updateCounter(){
+    counterDisplay.textContent = count;
+    localStorage.setItem("counter", count);
+}
 incrementBtn.addEventListener("click", function(){
     count++;
     counterDisplay.textContent = count;
     updateCounterColor();
+    updateCounter();
 });
 
 decrementBtn.addEventListener("click", function(){
     count--;    
     counterDisplay.textContent = count;
     updateCounterColor();
+    updateCounter();
 });
 
 resetBtn.addEventListener("click", function(){
